@@ -54,4 +54,8 @@ exports.Mutation = {
     };
     return db.categories[index];
   },
+  deleteProduct: (p, { id }, { db }) => {
+    db.products = db.products.filter((product) => product.id !== id);
+    return true;
+  },
 };
