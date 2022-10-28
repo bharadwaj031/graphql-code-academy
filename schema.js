@@ -15,7 +15,6 @@ exports.typeDefs = gql`
     deleteCategory(id: ID!): Boolean!
     deleteProduct(id: ID!): Boolean!
     updateCategory(id: ID!, input: UpdateCategoryInput!): Category!
-    deleteProduct(id: ID!): Boolean!
   }
 
   type Product {
